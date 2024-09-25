@@ -13,7 +13,7 @@
         <h1>Tabla de Factoriales</h1>
         <table>
             <tr>
-                <th>Factorial del 0 al 10</th>
+                <th colspan="2">Factorial del 0 al 10</th>
             </tr>    
             <?php
                 require 'funciones.php';
@@ -26,7 +26,9 @@
                     echo "<tr><td>$i</td><td>$valor</td></tr>"; 
                 }
             ?>
-            <th>Levi Josué Candeias de Figueiredo</th>
+            <tr>
+                <th colspan="2">Levi Josué Candeias de Figueiredo</th>
+            </tr> 
         </table>
     </body>
 </html>
