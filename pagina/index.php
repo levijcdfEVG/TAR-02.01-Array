@@ -12,18 +12,21 @@
     <body>
         <h1>Tabla de Factoriales</h1>
         <table>
-        <?php
-            require 'funciones.php';
-            
-            for ($i=0; $i <= 10; $i++) { 
-                $array[$i] = calcularFactorial($i);
-            }
+            <tr>
+                <th>Factorial del 0 al 10</th>
+            </tr>    
+            <?php
+                require 'funciones.php';
+                
+                for ($i=0; $i <= 10; $i++) { 
+                    $array[$i] = calcularFactorial($i);
+                }
 
-            foreach ($array as $i => $valor) {
-                echo "<tr><td>$i</td><td>$valor</td></tr>"; 
-            }
-        ?>
-        </table>    
-        </div>
+                foreach ($array as $i => $valor) {
+                    echo "<tr><td>$i</td><td>$valor</td></tr>"; 
+                }
+            ?>
+            <th>Levi Josué Candeias de Figueiredo</th>
+        </table>
     </body>
 </html>
